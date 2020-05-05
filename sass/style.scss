@@ -1,0 +1,232 @@
+header{
+    section{
+        display:flex;
+        justify-content: center;
+
+
+        background: no-repeat right url('/img/fond_header.png');
+        background-size: cover;
+
+        i{
+            position:absolute;
+            left:2vw;
+            align-self: center;
+
+            border:black solid 4px;
+            padding: 10px;
+        }
+        h1{
+            font-size:3rem;
+            color:rgb(231, 208, 76);
+            margin-left:30px;
+        }
+    }
+
+    nav{
+        display:flex;
+        justify-content: center;
+    
+        background-color: rgb(231, 208, 76);
+        
+        article{
+            text-align: center;
+
+            border: solid black 1px;
+            border-radius: 15px;
+            background-color: rgb(245, 234, 171);
+
+            margin: 1vh 2vw 1vh 2vw;
+            padding: 1vh 1vw 1vh 1vw;
+
+            a{
+                text-decoration:none;
+                color:black;
+            }
+        }
+
+        article:hover{
+            transform:scale(1.1);
+            transition-duration: 400ms;
+        }
+
+        h2{
+            margin:1vh 1vw 1vh 1vw;
+            font-size:1.3rem;
+        }
+    }
+}
+
+
+
+
+
+main{
+    background-color: #ffdd92;
+    display: flex;
+}
+
+
+
+h3{
+    font-size: 1.5rem;
+    margin-left:3vw;
+}
+
+
+
+#laSelectionDeLaSemaine{
+    display:flex;
+    .produit{
+        display: flex;
+        flex-wrap: wrap;   
+        
+        article{
+            padding: 2vw 2vw 2vw 2vw;
+
+            a{   
+                text-decoration: none;
+
+                color:black;
+                font-size:1.5rem;
+                padding:0;
+                margin:0;
+            }
+
+            img{
+                height:150px;
+
+                border: solid black 1px;
+                border-radius: 20px;
+            }
+
+            h4{
+                margin: 0 0 1vh 3vw;
+                font-size:1.3rem;
+            }
+            p{
+                margin:0 0 0 3vw;
+                font-size:1rem;              
+            }
+            .poids{
+                margin-bottom:2vh;
+                color:#7c7c7c;
+            }
+        }
+    }
+    
+}
+
+
+#lesPlusPopulaires{
+
+    .produit{
+        display: flex;
+        flex-wrap: wrap;    
+    }
+    article{
+        display:flex;
+        padding: 2vw 2vw 2vw 2vw;
+        a{   
+            text-decoration: none;
+            color:black;
+            font-size:1.5rem;
+            padding:0;
+            margin:0;
+        }
+        img{
+            height:150px;
+            border: solid black 1px;
+            border-radius: 20px;
+        }
+        h4{
+            margin: 0 0 1vh 3vw;
+            font-size:1.3rem;
+        }
+        p{
+            margin:0 0 0 3vw;
+            font-size:1rem;              
+        }
+        .poids{
+            margin-bottom:2vh;
+            color:#7c7c7c;
+        }
+    }
+}
+    
+#semaineProchaine{
+
+    .produit{
+        display: flex;
+        flex-wrap: wrap;    
+    }
+    article{
+        display:flex;
+        padding: 2vw 2vw 2vw 2vw;
+        a{   
+            text-decoration: none;
+            color:black;
+            font-size:1.5rem;
+            padding:0;
+            margin:0;
+        }
+        img{
+            height:150px;
+            border: solid black 1px;
+            border-radius: 20px;
+        }
+        h4{
+            margin: 0 0 1vh 3vw;
+            font-size:1.3rem;
+        }
+        p{
+            margin:0 0 0 3vw;
+            font-size:1rem;              
+        }
+        .poids{
+            margin-bottom:2vh;
+            color:#7c7c7c;
+        }
+    }
+}
+
+
+
+aside{
+    width:20%;
+
+    background-color: rgb(170, 128, 65);
+    border:solid black 1px;
+    border-radius: 20px;
+
+    height:75vh;
+    margin: 1vh 1vw;
+    padding:2vh 2vw 2vh 2vw;
+
+    h5{
+        font-size:1.2rem;
+        text-decoration: underline;
+    }
+    img{
+        width:100%;
+    }
+}
+
+
+
+footer{
+    display:flex;
+
+
+    background-color: rgb(121, 79, 24);
+
+    h6{
+        font-size:1rem;
+        text-align: center;
+    }
+
+    article{
+        width:33%;
+
+        padding: 0 3vw 0 3vw;
+    }
+}
