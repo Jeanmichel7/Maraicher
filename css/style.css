@@ -1,186 +1,56 @@
-header section {
-  display: flex;
-  justify-content: center;
-  background: no-repeat right url("https://zupimages.net/up/20/19/mu9n.png");
-  background-size: cover;
+.img-banniere {
+  background-image: url(../img/banniere.jpg);
+  height: 250px;
 }
-header section i {
-  position: absolute;
-  left: 2vw;
-  align-self: center;
-  border: black solid 4px;
-  padding: 10px;
+
+.parallax {
+  background-attachment: fixed;
 }
-header section h1 {
-  font-size: 3rem;
-  color: #e7d04c;
-  margin-left: 29px;
-}
-header nav {
-  display: flex;
-  justify-content: center;
-  background-color: #e7d04c;
-}
-header nav article {
-  text-align: center;
-  border: solid black 1px;
-  border-radius: 15px;
-  background-color: #f5eaab;
-  margin: 1vh 2vw 1vh 2vw;
-  padding: 1vh 1vw 1vh 1vw;
-}
-header nav article a {
-  text-decoration: none;
-  color: black;
-}
-header nav article:hover {
-  transform: scale(1.1);
-  transition-duration: 400ms;
-}
-header nav h2 {
-  margin: 1vh 1vw 1vh 1vw;
-  font-size: 1.3rem;
+
+body {
+  margin-top: 50px;
 }
 
 main {
-  background-color: #ffdd92;
+  margin-top: 5px;
+}
+
+.container, .container-fluid {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#presentation {
+  padding: 30px;
+}
+#presentation .white {
+  color: white;
+}
+#presentation h1 {
+  font-size: 5rem;
+}
+#presentation p {
+  font-size: 2rem;
+  color: white;
+}
+
+.center {
   display: flex;
+  justify-content: center;
+}
+
+main img {
+  width: 200px;
+  height: 200px;
 }
 
 h3 {
   font-size: 1.5rem;
-  margin-left: 3vw;
 }
 
-#laSelectionDeLaSemaine {
+.inline {
   display: flex;
-}
-#laSelectionDeLaSemaine .produit {
-  display: flex;
-  flex-wrap: wrap;
-}
-#laSelectionDeLaSemaine .produit article {
-  padding: 2vw 2vw 2vw 2vw;
-}
-#laSelectionDeLaSemaine .produit article a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
-  padding: 0;
-  margin: 0;
-}
-#laSelectionDeLaSemaine .produit article img {
-  height: 150px;
-  border: solid black 1px;
-  border-radius: 20px;
-}
-#laSelectionDeLaSemaine .produit article h4 {
-  margin: 0 0 1vh 3vw;
-  font-size: 1.3rem;
-}
-#laSelectionDeLaSemaine .produit article p {
-  margin: 0 0 0 3vw;
-  font-size: 1rem;
-}
-#laSelectionDeLaSemaine .produit article .poids {
-  margin-bottom: 2vh;
-  color: #7c7c7c;
-}
-
-#lesPlusPopulaires .produit {
-  display: flex;
-  flex-wrap: wrap;
-}
-#lesPlusPopulaires article {
-  display: flex;
-  padding: 2vw 2vw 2vw 2vw;
-}
-#lesPlusPopulaires article a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
-  padding: 0;
-  margin: 0;
-}
-#lesPlusPopulaires article img {
-  height: 150px;
-  border: solid black 1px;
-  border-radius: 20px;
-}
-#lesPlusPopulaires article h4 {
-  margin: 0 0 1vh 3vw;
-  font-size: 1.3rem;
-}
-#lesPlusPopulaires article p {
-  margin: 0 0 0 3vw;
-  font-size: 1rem;
-}
-#lesPlusPopulaires article .poids {
-  margin-bottom: 2vh;
-  color: #7c7c7c;
-}
-
-#semaineProchaine .produit {
-  display: flex;
-  flex-wrap: wrap;
-}
-#semaineProchaine article {
-  display: flex;
-  padding: 2vw 2vw 2vw 2vw;
-}
-#semaineProchaine article a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
-  padding: 0;
-  margin: 0;
-}
-#semaineProchaine article img {
-  height: 150px;
-  border: solid black 1px;
-  border-radius: 20px;
-}
-#semaineProchaine article h4 {
-  margin: 0 0 1vh 3vw;
-  font-size: 1.3rem;
-}
-#semaineProchaine article p {
-  margin: 0 0 0 3vw;
-  font-size: 1rem;
-}
-#semaineProchaine article .poids {
-  margin-bottom: 2vh;
-  color: #7c7c7c;
-}
-
-aside {
-  width: 20%;
-  background-color: #aa8041;
-  border: solid black 1px;
-  border-radius: 20px;
-  height: 75vh;
-  margin: 1vh 1vw;
-  padding: 2vh 2vw 2vh 2vw;
-}
-aside h5 {
-  font-size: 1.2rem;
-  text-decoration: underline;
-}
-aside img {
-  width: 100%;
-}
-
-footer {
-  display: flex;
-  background-color: #794f18;
-}
-footer h6 {
-  font-size: 1rem;
-  text-align: center;
-}
-footer article {
-  width: 33%;
-  padding: 0 3vw 0 3vw;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
