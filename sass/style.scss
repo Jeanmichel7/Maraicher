@@ -27,6 +27,7 @@ h4{
 }
 h5{
     font-weight: bold;
+    color:#475a51;
 }
 .underline{
     height:2px;
@@ -113,6 +114,15 @@ footer{
     ul, p{
         list-style: none;
         padding-left:20px;
+        color:#656e68;
+    }
+    
+    a{
+        color:#656e68;
+    }
+    .mention{
+        text-align: center;
+        font-size:1rem;
     }
 }
 
