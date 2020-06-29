@@ -1,232 +1,127 @@
-header{
-    section{
-        display:flex;
-        justify-content: center;
-
-
-        background: no-repeat right url('https://zupimages.net/up/20/19/mu9n.png');
-        background-size: cover;
-
-        i{
-            position:absolute;
-            left:2vw;
-            align-self: center;
-
-            border:black solid 4px;
-            padding: 10px;
-        }
-        h1{
-            font-size:3rem;
-            color:rgb(231, 208, 76);
-            margin-left:29px;
-        }
-    }
-
-    nav{
-        display:flex;
-        justify-content: center;
-    
-        background-color: rgb(231, 208, 76);
-        
-        article{
-            text-align: center;
-
-            border: solid black 1px;
-            border-radius: 15px;
-            background-color: rgb(245, 234, 171);
-
-            margin: 1vh 2vw 1vh 2vw;
-            padding: 1vh 1vw 1vh 1vw;
-
-            a{
-                text-decoration:none;
-                color:black;
-            }
-        }
-
-        article:hover{
-            transform:scale(1.1);
-            transition-duration: 400ms;
-        }
-
-        h2{
-            margin:1vh 1vw 1vh 1vw;
-            font-size:1.3rem;
-        }
-    }
+/*En commun */
+body{
+    background-color:#fcf9f4;
 }
-
-
-
-
-
-main{
-    background-color: #ffdd92;
+.center{
     display: flex;
+    justify-content: center;
 }
-
-
-
+h1{
+    font-size: 4rem;
+}
+h2{
+    margin-left:20px;
+    padding-top:20px;
+    color:#475a51;
+    font-weight: bold;
+    text-align: center;
+}
 h3{
     font-size: 1.5rem;
-    margin-left:3vw;
+}
+h4{
+    text-align: center;
+    margin-left:40px;
+    font-size:2.3rem;
+    color: #656e68;
+}
+h5{
+    font-weight: bold;
+}
+.underline{
+    height:2px;
+    width:10vw;
+    border-radius: 2px;
+    margin-top:20px;
+    background-color: #859189;
+    margin-left:44vw;
+    margin-bottom:30px;
+}
+
+main a{
+    color:black;
+}
+
+.inline{
+    display: flex;
+    justify-content: space-between;
 }
 
 
-
-#laSelectionDeLaSemaine{
-    display:flex;
-    .produit{
-        display: flex;
-        flex-wrap: wrap;   
-        
-        article{
-            padding: 2vw 2vw 2vw 2vw;
-
-            a{   
-                text-decoration: none;
-
-                color:black;
-                font-size:1.5rem;
-                padding:0;
-                margin:0;
-            }
-
-            img{
-                height:150px;
-
-                border: solid black 1px;
-                border-radius: 20px;
-            }
-
-            h4{
-                margin: 0 0 1vh 3vw;
-                font-size:1.3rem;
-            }
-            p{
-                margin:0 0 0 3vw;
-                font-size:1rem;              
-            }
-            .poids{
-                margin-bottom:2vh;
-                color:#7c7c7c;
-            }
-        }
-    }
-    
+/* Navigation */
+.navbar .icon-bar{
+    background-color: white;
 }
 
-
-#lesPlusPopulaires{
-
-    .produit{
-        display: flex;
-        flex-wrap: wrap;    
-    }
-    article{
+/* Présentation */
+.img-banniere{
+    background-color:#fcf9f4;   
+}
+#presentation{
+    padding-top:80px;
+    .presentation-image{
         display:flex;
-        padding: 2vw 2vw 2vw 2vw;
-        a{   
-            text-decoration: none;
-            color:black;
-            font-size:1.5rem;
-            padding:0;
-            margin:0;
-        }
-        img{
-            height:150px;
-            border: solid black 1px;
-            border-radius: 20px;
-        }
-        h4{
-            margin: 0 0 1vh 3vw;
-            font-size:1.3rem;
-        }
-        p{
-            margin:0 0 0 3vw;
-            font-size:1rem;              
-        }
-        .poids{
-            margin-bottom:2vh;
-            color:#7c7c7c;
-        }
+        flex-wrap: wrap;
     }
-}
-    
-#semaineProchaine{
-
-    .produit{
-        display: flex;
-        flex-wrap: wrap;    
-    }
-    article{
-        display:flex;
-        padding: 2vw 2vw 2vw 2vw;
-        a{   
-            text-decoration: none;
-            color:black;
-            font-size:1.5rem;
-            padding:0;
-            margin:0;
-        }
-        img{
-            height:150px;
-            border: solid black 1px;
-            border-radius: 20px;
-        }
-        h4{
-            margin: 0 0 1vh 3vw;
-            font-size:1.3rem;
-        }
-        p{
-            margin:0 0 0 3vw;
-            font-size:1rem;              
-        }
-        .poids{
-            margin-bottom:2vh;
-            color:#7c7c7c;
-        }
+    .parallax{
+        background-attachment:fixed
     }
 }
 
-
-
-aside{
-    width:20%;
-
-    background-color: rgb(170, 128, 65);
-    border:solid black 1px;
-    border-radius: 20px;
-
-    height:75vh;
-    margin: 1vh 1vw;
-    padding:2vh 2vw 2vh 2vw;
-
-    h5{
-        font-size:1.2rem;
-        text-decoration: underline;
-    }
+main{
     img{
-        width:100%;
+        width:200px;
+        height:200px;
+        border-radius: 10px;
+    }  
+    #laselection{
+        background-color:#dacec2;
+        border-radius: 10px;
+    }
+    #ptsdevente{
+        background-color:#fcf9f4;
+        padding-bottom: 30px;
+        ul{
+            list-style: none;
+            text-align: center;
+        }
+        li{
+            color: #859189;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        h2{
+            margin-left:50px;
+        }
+    }
+    #populaire{
+        background-color:#dacec2;
+        border-radius: 10px;
+    }
+    #prochainement{
+        background-color:#fcf9f4;
     }
 }
+
 
 
 
 footer{
-    display:flex;
-
-
-    background-color: rgb(121, 79, 24);
-
-    h6{
-        font-size:1rem;
-        text-align: center;
+    background-color: #dacec2;
+    margin:20px -15px 0 -15px;   
+    ul, p{
+        list-style: none;
+        padding-left:20px;
     }
 
-    article{
-        width:33%;
 
-        padding: 0 3vw 0 3vw;
+}
+
+
+
+@media screen and (max-width:767px){
+    .navbar{ 
+        background-color: #222222;
     }
 }

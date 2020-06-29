@@ -4,196 +4,301 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La ferme à Lolo</title>
+    <title>Au coin du champs</title>
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet">
 
-
-
-    <link href="fontawesome/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <section>
-            <i class="fas fa-leaf fa-3x"></i>
-            <h1>La ferme à Lolo</h1>
-        </section>
+    <div class="container-fluid">
+        <header>
+            <!-- barre de navigation-->
+            <nav class="navbar navbar-fixed-top">
+                <!--Bouton Menu en responsive-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Au bout du hangar</a>
+                </div>
 
-        <nav>
-            <article>
-                <h2><a href="https://google.fr">La sélection de la semaine</a></h2>
-            </article>
-            <article>
-                <h2><a href="https://google.fr">Tous les produits</a></h2>
-            </article>
-            <article>
-                <h2><a href="https://google.fr">Fruits et Légumes</a></h2>
-            </article>
-            <article>
-                <h2><a href="https://google.fr">Nos produits transformés</a></h2>
-            </article>
-        </nav>
-    </header>
+                <!-- Menu-->
+                <div class="collapse navbar-collapse navbar-inverse">
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a href="#">Acceuil</a></li>
+                        <li><a href="#">Point de vente</a></li>
 
-    <main>
-        <div class="left">
-            <section id="laSelectionDeLaSemaine">
-                <div class="container">
-                    <h3>La sélection de la semaine</h3>
+                        <!--Lien déroulant-->
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" href="#">Nos produits<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">un peu de ca</a></li>
+                                <li><a href="#">bcp de ca</a></li>
+                                <li><a href="#">quelque comme ca</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Autres</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Panier</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-                    <div class="produit">
-                        <article>
-                            <a href="https://google.fr">
+        <main>
+            <!-- Présentation -->
+            <div class="img-banniere parallax text-center" id="presentation">
+                <i class="fa fa-pagelines fa-4x"></i>
+                <h1>Au coin du champs</h1><br>
+                <p>Une culture saine et responsable, respectueuse de l'environnement et de votre santé.<br><br>
+                    Installé sur des terres familliales en Lasce, entre Colmar et Mulhouse, les ferme de lolo est une
+                    exploitation maraichère qui propose une agriculture sans traitement ni autre. Les produits cultivés
+                    sont disponible sur place, en ligne et chez nos partenaires.
+                </p><br>
+                <div>
+                    <button class="btn btn-success">Rejoignez-nous</botton>
+                </div><br>
+                <p>Rejoignez nous pour avoir la newsletter hebdomadaire</p>
+                <div class="row center presentation-image">
+                    <img src="img/permaculture.png" alt="plant permaculture">
+                    <img src="img/micro-fermer.png" alt="poule ferme">
+                    <img src="img/sol-vivant.png" alt="ver sol vivant">
+                    <img src="img/agroforestier.png" alt="arbre forestier">
+                </div>
+            </div>
+
+            <div>
+                <!--Onglet
+                <ul class="nav nav-tabs nav-justified" id="onglet">
+                    <li class="active"><a href="#panier" data-toggle="tab">Panier de la semaine</a></li>
+                    <li><a href="#produit" data-toggle="tab">Prochainement...</a></li>
+                    <li><a href="#menu3" data-toggle="tab">Menu 3</a></li>
+                    <li><a href="#informations" data-toggle="tab">Informations pratiques</a></li>
+                </ul>
+                <div class="tab-content">
+                -->
+                <section id="laselection">
+                    <!-- Menu1 : Panier 
+                    <div class="tab-pane active fade in" id="panier">-->
+                    <h2>Les produits de la semaine</h2>
+                    <hr>
+                    <div class="row">
+                        <article class="center col-xs-6 col-sm-4 col-md-3">
+                            <a href="#">
                                 <img src="img/carotte.jpg"></img>
-                                <h4>Carotte</h4>
-                                <p class="prix">4.95€</p>
-                                <p class="poids">200g</p>
+                                <h3>Carotte - Variété etc</h3>
+                                <div class="inline">
+                                    <p class="prix">4.95€</p>
+                                    <p class="poids">200g</p>
+                                </div>
                             </a>
                         </article>
-
-                        <article>
-                            <a href="https://google.fr">
+                        <article class="center col-xs-6 col-sm-4 col-md-3">
+                            <a href="#">
                                 <img src="img/betterave.jpg"></img>
-                                <h4>Betterave</h4>
-                                <p class="prix">4.95€</p>
-                                <p class="poids">200g</p>
+                                <h3>Betterave</h3>
+                                <div class="inline">
+                                    <p class="prix">4.95€</p>
+                                    <p class="poids">200g</p>
+                                </div>
                             </a>
                         </article>
-
-                        <article>
-                            <a href="https://google.fr">
+                        <article class="center col-xs-6 col-sm-4 col-md-3">
+                            <a href="#">
                                 <img src="img/chou-fleur.jpg"></img>
-                                <h4>Choux fleurs</h4>
-                                <p class="prix">4.95€</p>
-                                <p class="poids">200g</p>
+                                <h3>Choux fleurs</h3>
+                                <div class="inline">
+                                    <p class="prix">4.95€</p>
+                                    <p class="poids">200g</p>
+                                </div>
                             </a>
                         </article>
-
-                        <article>
-                            <a href="https://google.fr">
+                        <article class="center col-xs-6 col-sm-4 col-md-3">
+                            <a href="#">
                                 <img src="img/Tomate.jpg"></img>
-                                <h4>Carotte</h4>
-                                <p class="prix">4.95€</p>
-                                <p class="poids">200g</p>
+                                <h3>Carotte</h3>
+                                <div class="inline">
+                                    <p class="prix">4.95€</p>
+                                    <p class="poids">200g</p>
+                                </div>
                             </a>
                         </article>
                     </div>
-                </div>
+                    <!--</div> -->
+                </section>
 
-                <aside>
-                    <article>
-                        <h5>Heures d'ouvertures</h5>
-                        <p> En semaine : aucune idée</p>
-                        <p>Week-end : encore moins</p>
-                    </article>
-        
-                    <article>
-                        <h5>Localisation</h5>
-                        <img src="img/localisation.png">
-                    </article>
-        
-                    <article>
-                        <h5>Partenaire</h5>
+                <!-- Nos points de Vente -->
+                <section id="ptsdevente">
+                    <h2 class="center">Points de ventes</h2>
+                    <div class="underline center"></div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <article>
+                                <h4>En Direct</h4>
+                                <ul>
+                                    <li>5 route de Rouffach</li>
+                                    <li>WECKOLSHEIM</li>
+                                    <hr>
+                                    <li class="bold">Tous les jours de 14h à 18h</li>
+                                    <li>Du Lundi au Vendredi</li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="col-sm-6">
+                            <article>
+                                <h4>Pas en Direct</h4>
+                                <ul>
+                                    <li>5 route de Rouffach</li>
+                                    <li>WECKOLSHEIM</li>
+                                    <hr>
+                                    <li class="bold">Tous les jours de 14h à 18h</li>
+                                    <li>Du Lundi au Vendredi</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="populaire">
+                    <!-- Menu 2 : Les populaires
+                    <div class="tab-pane fade" id="produit">-->
+                    <h2>Les plus populaires</h2>
+                    <hr>
+                    <div class="row">
+                        <article class="center col-xs-6 col-sm-4 col-md-3">
+                            <a href="#">
+                                <img src="img/Fraise-620-12.jpg"></img>
+                                <h3>Carotte</h3>
+                                <div class="inline">
+                                    <p class="prix">4.95€</p>
+                                    <p class="poids">200g</p>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="center col-xs-6 col-sm-4 col-md-3">
+                            <a href="#">
+                                <img src="img/epinard.jpg"></img>
+                                <h3>Carotte</h3>
+                                <div class="inline">
+                                    <p class="prix">4.95€</p>
+                                    <p class="poids">200g</p>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="center col-xs-6 col-sm-4 col-md-3">
+                            <a href="#">
+                                <img src="img/poivrons.jpg"></img>
+                                <h3>Carotte</h3>
+                                <div class="inline">
+                                    <p class="prix">4.95€</p>
+                                    <p class="poids">200g</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <!--</div>-->
+                </section>
+
+                <section id="prochainement">
+                    <!-- Menu 3 
+                    <div class="tab-pane fade" id="menu3">-->
+                    <h2>La semaine prochaine</h2>
+                    <hr>
+                    <div class="row">
+                        <article class="center col-xs-6 col-sm-4 col-md-3">
+                            <a href="#">
+                                <img src="img/tomate.jpg"></img>
+                                <h3>Carotte</h3>
+                                <div class="inline">
+                                    <p class="prix">4.95€</p>
+                                    <p class="poids">200g</p>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="center col-xs-6 col-sm-4 col-md-3">
+                            <a href="#">
+                                <img src="img/asperge.jpg"></img>
+                                <h3>Carotte</h3>
+                                <div class="inline">
+                                    <p class="prix">4.95€</p>
+                                    <p class="poids">200g</p>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="center col-xs-6 col-sm-4 col-md-3">
+                            <a href="#">
+                                <img src="img/chou-cabus-zoom.jpg"></img>
+                                <h3>Carotte</h3>
+                                <div class="inline">
+                                    <p class="prix">4.95€</p>
+                                    <p class="poids">200g</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <!--</div>-->
+                </section>
+            </div>
+        </main>
+
+
+        <footer>
+            <section class="container-fluid">
+                <div class="row">
+                    <!-- Contact -->
+                    <article class="col-xs-6 col-sm-4 col-md-4">
+                        <h5>NOUS CONTACTER</h5>
                         <ul>
-                            <li>MrBricolage</li>
-                            <li>SEARL de la Digue</li>
-                            <li>blabla</li>
+                            <li>Nom et prénom</li>
+                            <li>12 Rue du là bas loin</li>
+                            <li>68600, Par-là-bas</li>
+                            <li>06 52 63 85 46</li>
+                            <li>adressecontact@hotmail.fr</li>
                         </ul>
                     </article>
-                </aside>
-            </section>
 
-            <section id="lesPlusPopulaires">
-                <h3>Les plus populaires</h3>
-                <div class="produit">
-                    <article>
-                        <a href="https://google.fr">
-                            <img src="img/Fraise-620-12.jpg"></img>
-                            <h4>Carotte</h4>
-                            <p class="prix">4.95€</p>
-                            <p class="poids">200g</p>
-                        </a>
-                    </article>
+                    <!-- Newsletter-->
+					<article class="col-xs-6 col-sm-4 col-md-4">
+						<h5>NEWSLETTER</h5>
+						<p>Abonnez vous à notre newsletter pour avoir les produit de la semaine</strong></p>
+						<form class="form-inline">
+							<div class="form-group">
+								<input type="email" class="form-control" placeholder="Votre e-mail" id="emailnewsletter" title="Votre e-mail">
+								<button id="btnform" type="button" class="btn btn-default">Envoyez</button>
+							</div>
+						</form>
+					</article>
 
-                    <article>
-                        <a href="https://google.fr">
-                            <img src="img/epinard.jpg"></img>
-                            <h4>Carotte</h4>
-                            <p class="prix">4.95€</p>
-                            <p class="poids">200g</p>
-                        </a>
-                    </article>
-
-                    <article>
-                        <a href="https://google.fr">
-                            <img src="img/poivrons.jpg"></img>
-                            <h4>Carotte</h4>
-                            <p class="prix">4.95€</p>
-                            <p class="poids">200g</p>
-                        </a>
-                    </article>
+                    <!--Reseau sociaux-->
+					<article class="col-xs-6 col-sm-4 col-md-4">
+						<h5>SUIVEZ NOUS</h5>
+						<div class="reseausociaux">
+							<a class="social" href="#" title="Twitter"><span class="fa fa-twitter fa-2x"></span></a>
+							<a class="social" href="#" title="Facebook"><span class="fa fa-facebook fa-2x"></span></a>
+							<a class="social" href="#" title="Tuconnais?"><span class="fa fa-dribbble fa-2x"></span></a>
+							<a class="social" href="#" title="Instagram"><span class="fa fa-instagram fa-2x"></span></a>
+						</div>
+					</article>
                 </div>
             </section>
-
-            <section id="semaineProchaine">
-                <h3>La semaine prochaine</h3>
-                <div class="produit">
-                    <article>
-                        <a href="https://google.fr">
-                            <img src="img/Tomate.jpg"></img>
-                            <h4>Carotte</h4>
-                            <p class="prix">4.95€</p>
-                            <p class="poids">200g</p>
-                        </a>
-                    </article>
-
-                    <article>
-                        <a href="https://google.fr">
-                            <img src="img/asperge.jpg"></img>
-                            <h4>Carotte</h4>
-                            <p class="prix">4.95€</p>
-                            <p class="poids">200g</p>
-                        </a>
-                    </article>
-
-                    <article>
-                        <a href="https://google.fr">
-                            <img src="img/chou-cabus-zoom.jpg"></img>
-                            <h4>Carotte</h4>
-                            <p class="prix">4.95€</p>
-                            <p class="poids">200g</p>
-                        </a>
-                    </article>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <article>
-            <h6>Mentions Légales</h6>
-            <p> Nom et prénom <br>
-                Adresse de domicile<br>
-                Numéro de téléphone et adresse de courrier électronique <br>
-                Nom du directeur ou du codirecteur de la publication et celui du responsable de la rédaction <br>
-                Nom, dénomination ou raison sociale<br>
-            </p>
-        </article>
-
-        <article>
-            <h6>Nous contactez</h6>
-            <p> Va voir les mentions légales j'ai la flemme blabla text de remplissage histoire d'avoir un rendu</p>
-        </article>
-
-        <article>
-            <h6>Vos commentaires</h6>
-            <p>
-                prochainement... vos commentaires
-            </p>
-        </article>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>

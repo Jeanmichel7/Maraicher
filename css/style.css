@@ -1,186 +1,128 @@
-header section {
-  display: flex;
-  justify-content: center;
-  background: no-repeat right url("https://zupimages.net/up/20/19/mu9n.png");
-  background-size: cover;
-}
-header section i {
-  position: absolute;
-  left: 2vw;
-  align-self: center;
-  border: black solid 4px;
-  padding: 10px;
-}
-header section h1 {
-  font-size: 3rem;
-  color: #e7d04c;
-  margin-left: 29px;
-}
-header nav {
-  display: flex;
-  justify-content: center;
-  background-color: #e7d04c;
-}
-header nav article {
-  text-align: center;
-  border: solid black 1px;
-  border-radius: 15px;
-  background-color: #f5eaab;
-  margin: 1vh 2vw 1vh 2vw;
-  padding: 1vh 1vw 1vh 1vw;
-}
-header nav article a {
-  text-decoration: none;
-  color: black;
-}
-header nav article:hover {
-  transform: scale(1.1);
-  transition-duration: 400ms;
-}
-header nav h2 {
-  margin: 1vh 1vw 1vh 1vw;
-  font-size: 1.3rem;
+@charset "UTF-8";
+/*En commun */
+body {
+  background-color: #fcf9f4;
 }
 
-main {
-  background-color: #ffdd92;
+.center {
   display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  margin-left: 20px;
+  padding-top: 20px;
+  color: #475a51;
+  font-weight: bold;
+  text-align: center;
 }
 
 h3 {
   font-size: 1.5rem;
-  margin-left: 3vw;
 }
 
-#laSelectionDeLaSemaine {
-  display: flex;
+h4 {
+  text-align: center;
+  margin-left: 40px;
+  font-size: 2.3rem;
+  color: #656e68;
 }
-#laSelectionDeLaSemaine .produit {
+
+h5 {
+  font-weight: bold;
+}
+
+.underline {
+  height: 2px;
+  width: 10vw;
+  border-radius: 2px;
+  margin-top: 20px;
+  background-color: #859189;
+  margin-left: 44vw;
+  margin-bottom: 30px;
+}
+
+main a {
+  color: black;
+}
+
+.inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Navigation */
+.navbar .icon-bar {
+  background-color: white;
+}
+
+/* Présentation */
+.img-banniere {
+  background-color: #fcf9f4;
+}
+
+#presentation {
+  padding-top: 80px;
+}
+#presentation .presentation-image {
   display: flex;
   flex-wrap: wrap;
 }
-#laSelectionDeLaSemaine .produit article {
-  padding: 2vw 2vw 2vw 2vw;
-}
-#laSelectionDeLaSemaine .produit article a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
-  padding: 0;
-  margin: 0;
-}
-#laSelectionDeLaSemaine .produit article img {
-  height: 150px;
-  border: solid black 1px;
-  border-radius: 20px;
-}
-#laSelectionDeLaSemaine .produit article h4 {
-  margin: 0 0 1vh 3vw;
-  font-size: 1.3rem;
-}
-#laSelectionDeLaSemaine .produit article p {
-  margin: 0 0 0 3vw;
-  font-size: 1rem;
-}
-#laSelectionDeLaSemaine .produit article .poids {
-  margin-bottom: 2vh;
-  color: #7c7c7c;
+#presentation .parallax {
+  background-attachment: fixed;
 }
 
-#lesPlusPopulaires .produit {
-  display: flex;
-  flex-wrap: wrap;
+main img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
 }
-#lesPlusPopulaires article {
-  display: flex;
-  padding: 2vw 2vw 2vw 2vw;
+main #laselection {
+  background-color: #dacec2;
+  border-radius: 10px;
 }
-#lesPlusPopulaires article a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
-  padding: 0;
-  margin: 0;
+main #ptsdevente {
+  background-color: #fcf9f4;
+  padding-bottom: 30px;
 }
-#lesPlusPopulaires article img {
-  height: 150px;
-  border: solid black 1px;
-  border-radius: 20px;
+main #ptsdevente ul {
+  list-style: none;
+  text-align: center;
 }
-#lesPlusPopulaires article h4 {
-  margin: 0 0 1vh 3vw;
-  font-size: 1.3rem;
+main #ptsdevente li {
+  color: #859189;
 }
-#lesPlusPopulaires article p {
-  margin: 0 0 0 3vw;
-  font-size: 1rem;
+main #ptsdevente .bold {
+  font-weight: bold;
 }
-#lesPlusPopulaires article .poids {
-  margin-bottom: 2vh;
-  color: #7c7c7c;
+main #ptsdevente h2 {
+  margin-left: 50px;
 }
-
-#semaineProchaine .produit {
-  display: flex;
-  flex-wrap: wrap;
+main #populaire {
+  background-color: #dacec2;
+  border-radius: 10px;
 }
-#semaineProchaine article {
-  display: flex;
-  padding: 2vw 2vw 2vw 2vw;
-}
-#semaineProchaine article a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
-  padding: 0;
-  margin: 0;
-}
-#semaineProchaine article img {
-  height: 150px;
-  border: solid black 1px;
-  border-radius: 20px;
-}
-#semaineProchaine article h4 {
-  margin: 0 0 1vh 3vw;
-  font-size: 1.3rem;
-}
-#semaineProchaine article p {
-  margin: 0 0 0 3vw;
-  font-size: 1rem;
-}
-#semaineProchaine article .poids {
-  margin-bottom: 2vh;
-  color: #7c7c7c;
-}
-
-aside {
-  width: 20%;
-  background-color: #aa8041;
-  border: solid black 1px;
-  border-radius: 20px;
-  height: 75vh;
-  margin: 1vh 1vw;
-  padding: 2vh 2vw 2vh 2vw;
-}
-aside h5 {
-  font-size: 1.2rem;
-  text-decoration: underline;
-}
-aside img {
-  width: 100%;
+main #prochainement {
+  background-color: #fcf9f4;
 }
 
 footer {
-  display: flex;
-  background-color: #794f18;
+  background-color: #dacec2;
+  margin: 20px -15px 0 -15px;
 }
-footer h6 {
-  font-size: 1rem;
-  text-align: center;
+footer ul, footer p {
+  list-style: none;
+  padding-left: 20px;
 }
-footer article {
-  width: 33%;
-  padding: 0 3vw 0 3vw;
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    background-color: #222222;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
