@@ -1,37 +1,7 @@
-.img-banniere {
-  background-image: url(../img/banniere.jpg);
-  height: 250px;
-}
-
-.parallax {
-  background-attachment: fixed;
-}
-
+@charset "UTF-8";
+/*En commun */
 body {
-  margin-top: 50px;
-}
-
-main {
-  margin-top: 5px;
-}
-
-.container, .container-fluid {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-#presentation {
-  padding: 30px;
-}
-#presentation .white {
-  color: white;
-}
-#presentation h1 {
-  font-size: 5rem;
-}
-#presentation p {
-  font-size: 2rem;
-  color: white;
+  background-color: #fcf9f4;
 }
 
 .center {
@@ -39,18 +9,120 @@ main {
   justify-content: center;
 }
 
-main img {
-  width: 200px;
-  height: 200px;
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  margin-left: 20px;
+  padding-top: 20px;
+  color: #475a51;
+  font-weight: bold;
+  text-align: center;
 }
 
 h3 {
   font-size: 1.5rem;
 }
 
+h4 {
+  text-align: center;
+  margin-left: 40px;
+  font-size: 2.3rem;
+  color: #656e68;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.underline {
+  height: 2px;
+  width: 10vw;
+  border-radius: 2px;
+  margin-top: 20px;
+  background-color: #859189;
+  margin-left: 44vw;
+  margin-bottom: 30px;
+}
+
+main a {
+  color: black;
+}
+
 .inline {
   display: flex;
   justify-content: space-between;
+}
+
+/* Navigation */
+.navbar .icon-bar {
+  background-color: white;
+}
+
+/* Présentation */
+.img-banniere {
+  background-color: #fcf9f4;
+}
+
+#presentation {
+  padding-top: 80px;
+}
+#presentation .presentation-image {
+  display: flex;
+  flex-wrap: wrap;
+}
+#presentation .parallax {
+  background-attachment: fixed;
+}
+
+main img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+main #laselection {
+  background-color: #dacec2;
+  border-radius: 10px;
+}
+main #ptsdevente {
+  background-color: #fcf9f4;
+  padding-bottom: 30px;
+}
+main #ptsdevente ul {
+  list-style: none;
+  text-align: center;
+}
+main #ptsdevente li {
+  color: #859189;
+}
+main #ptsdevente .bold {
+  font-weight: bold;
+}
+main #ptsdevente h2 {
+  margin-left: 50px;
+}
+main #populaire {
+  background-color: #dacec2;
+  border-radius: 10px;
+}
+main #prochainement {
+  background-color: #fcf9f4;
+}
+
+footer {
+  background-color: #dacec2;
+  margin: 20px -15px 0 -15px;
+}
+footer ul, footer p {
+  list-style: none;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    background-color: #222222;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
