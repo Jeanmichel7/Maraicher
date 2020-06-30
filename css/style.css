@@ -14,7 +14,6 @@ h1 {
 }
 
 h2 {
-  margin-left: 20px;
   padding-top: 20px;
   color: #475a51;
   font-weight: bold;
@@ -37,14 +36,15 @@ h5 {
   color: #475a51;
 }
 
-.underline {
+.underline-titre {
   height: 2px;
   width: 10vw;
   border-radius: 2px;
   margin-top: 20px;
   background-color: #859189;
-  margin-left: 44vw;
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 main a {
@@ -53,7 +53,9 @@ main a {
 
 .inline {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 
 /* Navigation */
@@ -63,28 +65,62 @@ main a {
 
 /* Présentation */
 .img-banniere {
-  background-color: #fcf9f4;
+  background-image: url(../img/fonds2.jpg);
 }
 
-#presentation {
+main section img {
+  height: 180px;
+  width: 180px;
+}
+main #presentation {
   padding-top: 80px;
+  margin: 0px -15px 0px -15px;
+  padding-bottom: 20px;
 }
-#presentation .presentation-image {
-  display: flex;
-  flex-wrap: wrap;
+main .presentation-image {
+  margin-top: 3vh;
 }
-#presentation .parallax {
+main .presentation-image p {
+  font-size: 2rem;
+}
+main .presentation-image .small {
+  height: 40px;
+  margin-top: 40px;
+}
+main .underline {
+  height: 2px;
+  width: 50px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+  background-color: #859189;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .parallax {
   background-attachment: fixed;
-}
-
-main img {
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
 }
 main #laselection {
   background-color: #dacec2;
+  margin: 0 -15px 20px -15px;
+  padding-bottom: 10px;
+}
+main #laselection article {
+  padding: 0 0;
+}
+main #laselection .article {
+  border: #796742 solid 1px;
   border-radius: 10px;
+  background-color: #ccbdaa;
+  margin: 0px 20px 40px 20px;
+  padding: 0 10px 10px 10px;
+}
+main #laselection .article img {
+  margin-top: 20px;
+  border-radius: 10px;
+  border: #806739 solid 1px;
+}
+main #laselection button {
+  width: 60%;
 }
 main #ptsdevente {
   background-color: #fcf9f4;
@@ -99,9 +135,6 @@ main #ptsdevente li {
 }
 main #ptsdevente .bold {
   font-weight: bold;
-}
-main #ptsdevente h2 {
-  margin-left: 50px;
 }
 main #populaire {
   background-color: #dacec2;

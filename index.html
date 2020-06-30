@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <header>
             <!-- barre de navigation-->
             <nav class="navbar navbar-fixed-top">
@@ -70,14 +70,35 @@
                     <button class="btn btn-success">Rejoignez-nous</botton>
                 </div><br>
                 <p>Rejoignez nous pour avoir la newsletter hebdomadaire</p>
-                <div class="row center presentation-image">
-                    <img src="img/permaculture.png" alt="plant permaculture">
-                    <img src="img/micro-fermer.png" alt="poule ferme">
-                    <img src="img/sol-vivant.png" alt="ver sol vivant">
-                    <img src="img/agroforestier.png" alt="arbre forestier">
-                </div>
             </div>
 
+            <!-- Image de présentation-->
+            <div class="container">
+                <div class="row">
+                    <div class="presentation-image">
+                        <div class="text-center col-xs-6 col-sm-3">
+                            <img src="img/permaculture.png" alt="plant permaculture" >
+                            <p>Permaculture</p>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="text-center col-xs-6 col-sm-3">
+                            <img src="img/ver-sol-vivant.png" alt="plant permaculture" class="small">
+                            <p>Sol vivant</p>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="text-center col-xs-6 col-sm-3">
+                            <img src="img/micro-ferme.png" alt="plant permaculture" >
+                            <p>Micro Ferme</p>
+                            <div class="underline"></div>
+                        </div>
+                        <div class="text-center col-xs-6 col-sm-3">
+                            <img src="img/agroforestier.png" alt="plant permaculture" >
+                            <p>Agro Foret</p>
+                            <div class="underline"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div>
                 <!--Onglet
                 <ul class="nav nav-tabs nav-justified" id="onglet">
@@ -94,45 +115,61 @@
                     <h2>Les produits de la semaine</h2>
                     <hr>
                     <div class="row">
-                        <article class="center col-xs-6 col-sm-4 col-md-3">
-                            <a href="#">
-                                <img src="img/carotte.jpg"></img>
-                                <h3>Carotte - Variété etc</h3>
-                                <div class="inline">
-                                    <p class="prix">4.95€</p>
-                                    <p class="poids">200g</p>
-                                </div>
-                            </a>
+                        <article class="text-center col-xs-6 col-sm-4 col-md-3">
+                            <div class="article">
+                                <a href="#">
+                                    <img src="img/carotte.jpg"></img>
+                                    <h3>Carotte - Variété etc</h3>
+                                    <div class="inline">
+                                        <p class="prix">4.95€</p>
+                                        <p class="poids">200g</p>
+                                    </div>
+                                </a>
+                                <button type="button" class="btn btn-default">Ajouter au panier</button>
+                            </div>
+                            
                         </article>
-                        <article class="center col-xs-6 col-sm-4 col-md-3">
-                            <a href="#">
-                                <img src="img/betterave.jpg"></img>
-                                <h3>Betterave</h3>
-                                <div class="inline">
-                                    <p class="prix">4.95€</p>
-                                    <p class="poids">200g</p>
-                                </div>
-                            </a>
+                        <article class="text-center col-xs-6 col-sm-4 col-md-3">
+                            <div class="article">
+                                <a href="#">
+                                    <img src="img/betterave.jpg"></img>
+                                    <h3>Betterave</h3>
+                                    <div class="inline">
+                                        <p class="prix">4.95€</p>
+                                        <p class="poids">200g</p>
+                                    </div>
+                                </a>
+                                <button type="button" class="btn btn-default">Ajouter au panier</button>
+                            </div>
+                            
                         </article>
-                        <article class="center col-xs-6 col-sm-4 col-md-3">
-                            <a href="#">
-                                <img src="img/chou-fleur.jpg"></img>
-                                <h3>Choux fleurs</h3>
-                                <div class="inline">
-                                    <p class="prix">4.95€</p>
-                                    <p class="poids">200g</p>
-                                </div>
-                            </a>
+                        <article class="text-center col-xs-6 col-sm-4 col-md-3">
+                            <div class="article">
+                                <a href="#">
+                                    <img src="img/chou-fleur.jpg"></img>
+                                    <h3>Choux fleurs</h3>
+                                    <div class="inline">
+                                        <p class="prix">4.95€</p>
+                                        <p class="poids">200g</p>
+                                    </div>
+                                </a>
+                                <button type="button" class="btn btn-default">Ajouter au panier</button>
+                            </div>
+                            
                         </article>
-                        <article class="center col-xs-6 col-sm-4 col-md-3">
-                            <a href="#">
-                                <img src="img/Tomate.jpg"></img>
-                                <h3>Carotte</h3>
-                                <div class="inline">
-                                    <p class="prix">4.95€</p>
-                                    <p class="poids">200g</p>
-                                </div>
-                            </a>
+                        <article class="text-center col-xs-6 col-sm-4 col-md-3">
+                            <div class="article">
+                                <a href="#">
+                                    <img src="img/Tomate.jpg"></img>
+                                    <h3>Carotte</h3>
+                                    <div class="inline">
+                                        <p class="prix">4.95€</p>
+                                        <p class="poids">200g</p>
+                                    </div>
+                                </a>
+                                <button type="button" class="btn btn-default">Ajouter au panier</button>
+                            </div>
+                            
                         </article>
                     </div>
                     <!--</div> -->
@@ -141,7 +178,7 @@
                 <!-- Nos points de Vente -->
                 <section id="ptsdevente">
                     <h2 class="center">Points de ventes</h2>
-                    <div class="underline center"></div>
+                    <div class="underline-titre center"></div>
                     <div class="row">
                         <div class="col-xs-6">
                             <article>

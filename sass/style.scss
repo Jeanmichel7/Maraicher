@@ -1,4 +1,6 @@
+
 /*En commun */
+
 body{
     background-color:#fcf9f4;
 }
@@ -6,11 +8,11 @@ body{
     display: flex;
     justify-content: center;
 }
+
 h1{
     font-size: 4rem;
 }
 h2{
-    margin-left:20px;
     padding-top:20px;
     color:#475a51;
     font-weight: bold;
@@ -29,24 +31,32 @@ h5{
     font-weight: bold;
     color:#475a51;
 }
-.underline{
+.underline-titre{
     height:2px;
     width:10vw;
     border-radius: 2px;
     margin-top:20px;
     background-color: #859189;
-    margin-left:44vw;
     margin-bottom:30px;
-}
 
+    margin-right:auto;
+    margin-left:auto;
+}
 main a{
     color:black;
 }
-
 .inline{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-left:2vw;
+    margin-right:2vw;
 }
+
+
+
+
+
+
 
 
 /* Navigation */
@@ -56,29 +66,76 @@ main a{
 
 /* Présentation */
 .img-banniere{
-    background-color:#fcf9f4;   
+    background-image: url(../img/fonds2.jpg);
 }
-#presentation{
-    padding-top:80px;
-    .presentation-image{
-        display:flex;
-        flex-wrap: wrap;
+
+
+main{
+    section img{
+        height:180px;
+        width: 180px;
+    }  
+
+    #presentation{
+        padding-top:80px;
+        margin:0px -15px 0px -15px; 
+        padding-bottom:20px;
     }
+
+    .presentation-image{
+        margin-top:3vh;
+
+        p{
+            font-size:2rem;
+        }    
+        .small{
+            height:40px;
+            margin-top:40px;
+        }
+    }
+    
+    .underline{
+        height:2px;
+        width:50px;
+        margin-bottom:30px;
+        border-radius: 2px;
+        background-color: #859189;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
     .parallax{
         background-attachment:fixed
     }
-}
 
-main{
-    img{
-        width:200px;
-        height:200px;
-        border-radius: 10px;
-    }  
     #laselection{
         background-color:#dacec2;
-        border-radius: 10px;
+
+        margin: 0 -15px 20px -15px;
+        padding-bottom:10px;
+
+        article{
+            padding:0 0;
+        }
+        .article{
+            border:rgb(121, 103, 66) solid 1px;
+            border-radius: 10px;
+            background-color: rgb(204, 189, 170);
+
+            margin:0px 20px 40px 20px;
+            padding:0 10px 10px 10px;
+            img{
+                margin-top:20px;
+                border-radius: 10px;
+                border:rgb(128, 103, 57) solid 1px;
+            }
+        }
+
+        button{
+            width:60%;
+        }
     }
+
     #ptsdevente{
         background-color:#fcf9f4;
         padding-bottom: 30px;
@@ -92,14 +149,14 @@ main{
         .bold{
             font-weight: bold;
         }
-        h2{
-            margin-left:50px;
-        }
+        
     }
+
     #populaire{
         background-color:#dacec2;
         border-radius: 10px;
     }
+
     #prochainement{
         background-color:#fcf9f4;
     }
