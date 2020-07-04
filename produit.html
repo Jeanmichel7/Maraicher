@@ -12,12 +12,11 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+ 
     <!-- Google font-->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Pangolin&family=Yellowtail&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Pangolin&family=Yellowtail&display=swap"
         rel="stylesheet">
-
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-produit.css" rel="stylesheet">
 
 
 
@@ -30,7 +29,7 @@
 
 
 <body>
-    <div>
+    <div class="container-fluid">
         <header>
             <!-- barre de navigation-->
             <nav class="navbar navbar-fixed-top">
@@ -66,219 +65,574 @@
                 </div>
             </nav>
         </header>
-        
+
+
 
         <main>
+            <!--Onglet-->
+            <ul class="nav nav-tabs navbar-fixed-top mt-nav">
+                <li class="active"><a href="#produit">Nos produits</a></li>
+                <li><a href="#apero">Apéros</a></li>
+                <li><a href="#pt-relais">Point-relais</a></li>
+                <li><a href="#partenaire">Nos partenaires</a></li>
+            </ul>
 
-             <!--Onglet
-                <ul class="nav nav-tabs nav-justified" id="onglet">
-                    <li class="active"><a href="#panier" data-toggle="tab">Panier de la semaine</a></li>
-                    <li><a href="#produit" data-toggle="tab">Prochainement...</a></li>
-                    <li><a href="#menu3" data-toggle="tab">Menu 3</a></li>
-                    <li><a href="#informations" data-toggle="tab">Informations pratiques</a></li>
-                </ul>
-                <div class="tab-content">
-                -->
-                <section id="laselection">
-                    <!-- Menu1 : Panier 
-                    <div class="tab-pane active fade in" id="panier">-->
-                    <h2>Les produits de la semaine</h2>
-                    <hr>
+
+            <!-- Les produits -->
+            <section>
+                <div class="active fade in" id="produit">
+                    <h2>Nos Produits</h2>
+                    <div class="underline"></div>
+                    <p>Nos produits, local, transformation maison blabla</p>
+                    
                     <div class="row">
-                        <article class="text-center col-xs-6 col-sm-4 col-md-3">
+                        <article class="text-center col-xs-6 col-md-4 col-lg-3 mtb">
                             <div class="article">
                                 <a href="#">
                                     <img src="img/carotte.jpg"></img>
                                     <h3>Carotte - Variété etc</h3>
-                                    <div class="inline">
-                                        <p class="prix">4.95€</p>
-                                        <p class="poids">200g</p>
-                                    </div>
+                                    <p>20€/kg</p>
                                 </a>
-                                <button type="button" class="btn btn-default">Ajouter au panier</button>
+                                <div class="underline-center-article"></div>
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">200g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">4.95€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">400g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">9.25€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4  col-sm-4 mt-10">1 Kg</p>
+                                    <p class="col-xs-4  col-sm-4 mt-10">16.5€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
                             </div>
                         </article>
 
-                        <article class="text-center col-xs-6 col-sm-4 col-md-3">
-                            <div class="article">
-                                <a href="#">
-                                    <img src="img/betterave.jpg"></img>
-                                    <h3>Betterave</h3>
-                                    <div class="inline">
-                                        <p class="prix">4.95€</p>
-                                        <p class="poids">200g</p>
-                                    </div>
-                                </a>
-                                <button type="button" class="btn btn-default">Ajouter au panier</button>
-                            </div>
-                        </article>
 
-                        <article class="text-center col-xs-6 col-sm-4 col-md-3">
-                            <div class="article">
-                                <a href="#">
-                                    <img src="img/chou-fleur.jpg"></img>
-                                    <h3>Choux fleurs</h3>
-                                    <div class="inline">
-                                        <p class="prix">4.95€</p>
-                                        <p class="poids">200g</p>
-                                    </div>
-                                </a>
-                                <button type="button" class="btn btn-default">Ajouter au panier</button>
-                            </div>
-                        </article>
-
-                        <article class="text-center col-xs-6 col-sm-4 col-md-3">
-                            <div class="article">
-                                <a href="#">
-                                    <img src="img/Tomate.jpg"></img>
-                                    <h3>Carotte</h3>
-                                    <div class="inline">
-                                        <p class="prix">4.95€</p>
-                                        <p class="poids">200g</p>
-                                    </div>
-                                </a>
-                                <button type="button" class="btn btn-default">Ajouter au panier</button>
-                            </div>
-                        </article>
-                    </div>
-                    <!--</div> -->
-                </section>
-
-                <!-- Nos points de Vente -->
-                <section id="ptsdevente">
-                    <h2>Points de ventes</h2>
-                    <div class="underline-titre"></div>
-
-                    <div class="row">
-                        <article class="col-xs-6 contact1">
-                            <h4>En Direct</h4>
-                            <ul>
-                                <li>5 route de Rouffach</li>
-                                <li>WECKOLSHEIM</li>
-                                <hr>
-                                <li class="bold">Tous les jours de 14h à 18h</li>
-                                <li>Du Lundi au Vendredi</li>
-                            </ul>
-                        </article>
-                        <article class="col-xs-6 contact2">
-                            <h4>Pas en Direct</h4>
-                            <ul>
-                                <li>5 route de Rouffach</li>
-                                <li>WECKOLSHEIM</li>
-                                <hr>
-                                <li class="bold">Tous les jours de 14h à 18h</li>
-                                <li>Du Lundi au Vendredi</li>
-                            </ul>
-                        </article>
-                    </div>
-                </section>
-
-                <section id="populaire">
-                    <!-- Menu 2 : Les populaires
-                    <div class="tab-pane fade" id="produit">-->
-                    <h2>Les plus populaires</h2>
-                    <hr>
-                    <div class="row">
-                        <article class="text-center col-xs-6 col-sm-4 col-md-3">
+                        <article class="text-center col-xs-6 col-md-4 col-lg-3 mtb">
                             <div class="article">
                                 <a href="#">
                                     <img src="img/carotte.jpg"></img>
-                                    <h3>Carotte</h3>
-                                    <div class="inline">
-                                        <p class="prix">4.95€</p>
-                                        <p class="poids">200g</p>
-                                    </div>
+                                    <h3>Carotte - Variété etc</h3>
+                                    <p>20€/kg</p>
                                 </a>
-                                <button type="button" class="btn btn-default">Ajouter au panier</button>
+                                <div class="underline-center-article"></div>
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">200g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">4.95€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">400g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">9.25€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4  col-sm-4 mt-10">1 Kg</p>
+                                    <p class="col-xs-4  col-sm-4 mt-10">16.5€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
                             </div>
                         </article>
 
-                        <article class="text-center col-xs-6 col-sm-4 col-md-3">
+
+                        <article class="text-center col-xs-6 col-md-4 col-lg-3 mtb">
                             <div class="article">
                                 <a href="#">
-                                    <img src="img/epinard.jpg"></img>
-                                    <h3>Carotte</h3>
-                                    <div class="inline">
-                                        <p class="prix">4.95€</p>
-                                        <p class="poids">200g</p>
-                                    </div>
+                                    <img src="img/carotte.jpg"></img>
+                                    <h3>Carotte - Variété etc</h3>
+                                    <p>20€/kg</p>
                                 </a>
-                                <button type="button" class="btn btn-default">Ajouter au panier</button>
+                                <div class="underline-center-article"></div>
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">200g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">4.95€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">400g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">9.25€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4  col-sm-4 mt-10">1 Kg</p>
+                                    <p class="col-xs-4  col-sm-4 mt-10">16.5€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
                             </div>
                         </article>
 
-                        <article class="text-center col-xs-6 col-sm-4 col-md-3">
+
+                        <article class="text-center col-xs-6 col-md-4 col-lg-3 mtb">
                             <div class="article">
                                 <a href="#">
-                                    <img src="img/chou-fleur.jpg"></img>
-                                    <h3>Carotte</h3>
-                                    <div class="inline">
-                                        <p class="prix">4.95€</p>
-                                        <p class="poids">200g</p>
-                                    </div>
+                                    <img src="img/carotte.jpg"></img>
+                                    <h3>Carotte - Variété etc</h3>
+                                    <p>20€/kg</p>
                                 </a>
-                                <button type="button" class="btn btn-default">Ajouter au panier</button>
+                                <div class="underline-center-article"></div>
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">200g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">4.95€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">400g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">9.25€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4  col-sm-4 mt-10">1 Kg</p>
+                                    <p class="col-xs-4  col-sm-4 mt-10">16.5€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
                             </div>
                         </article>
                     </div>
-                    <!--</div>-->
-                </section>
+                </div>
+                <hr>
+            </section>
 
-                <section id="prochainement">
-                    <!-- Menu 3 
-                    <div class="tab-pane fade" id="menu3">-->
-                    <h2>La semaine prochaine</h2>
-                    <hr>
+
+            <!-- Menu 2 : Les populaires-->
+            <section>
+                <div class="fade in" id="apero">
+                    <h2>Les Apéros</h2>
+                    <div class="underline"></div>
+                    <p>Parce que c'est toujours le moment de partager un apéro</p>
+                    
                     <div class="row">
-                        <article class="text-center col-xs-6 col-sm-4 col-md-3">
+                        <article class="text-center col-xs-6 col-md-4 col-lg-3 mtb">
                             <div class="article">
                                 <a href="#">
-                                    <img src="img/chou-cabus-zoom.jpg"></img>
-                                    <h3>Carotte</h3>
-                                    <div class="inline">
-                                        <p class="prix">4.95€</p>
-                                        <p class="poids">200g</p>
-                                    </div>
+                                    <img src="img/carotte.jpg"></img>
+                                    <h3>Carotte - Variété etc</h3>
+                                    <p>20€/kg</p>
                                 </a>
-                                <button type="button" class="btn btn-default">Ajouter au panier</button>
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">200g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">4.95€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">400g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">9.25€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4  col-sm-4 mt-10">1 Kg</p>
+                                    <p class="col-xs-4  col-sm-4 mt-10">16.5€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
                             </div>
                         </article>
 
-                        <article class="text-center col-xs-6 col-sm-4 col-md-3">
+                        <article class="text-center col-xs-6 col-md-4 col-lg-3 mtb">
                             <div class="article">
                                 <a href="#">
-                                    <img src="img/asperge.jpg"></img>
-                                    <h3>Carotte</h3>
-                                    <div class="inline">
-                                        <p class="prix">4.95€</p>
-                                        <p class="poids">200g</p>
-                                    </div>
+                                    <img src="img/carotte.jpg"></img>
+                                    <h3>Carotte - Variété etc</h3>
+                                    <p>20€/kg</p>
                                 </a>
-                                <button type="button" class="btn btn-default">Ajouter au panier</button>
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">200g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">4.95€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">400g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">9.25€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4  col-sm-4 mt-10">1 Kg</p>
+                                    <p class="col-xs-4  col-sm-4 mt-10">16.5€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
                             </div>
                         </article>
 
-                        <article class="text-center col-xs-6 col-sm-4 col-md-3">
+                        <article class="text-center col-xs-6 col-md-4 col-lg-3 mtb">
                             <div class="article">
                                 <a href="#">
-                                    <img src="img/Fraise-620-12.jpg"></img>
-                                    <h3>Carotte</h3>
-                                    <div class="inline">
-                                        <p class="prix">4.95€</p>
-                                        <p class="poids">200g</p>
-                                    </div>
+                                    <img src="img/carotte.jpg"></img>
+                                    <h3>Carotte - Variété etc</h3>
+                                    <p>20€/kg</p>
                                 </a>
-                                <button type="button" class="btn btn-default">Ajouter au panier</button>
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">200g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">4.95€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">400g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">9.25€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4  col-sm-4 mt-10">1 Kg</p>
+                                    <p class="col-xs-4  col-sm-4 mt-10">16.5€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
                             </div>
                         </article>
+
                     </div>
-                    <!--</div>-->
-                </section>
+                </div>
+                <hr>
+            </section>
+
+            <!-- Point-relais-->
+            <section>
+                <div class="fade in" id="pt-relais">
+                    <h2>Le Point-Relais</h2>
+                    <div class="underline"></div>
+                    <p>Les produits de nos partenaires</p>
+                    
+                    <div class="row">
+                        <article class="text-center col-xs-6 col-md-4 col-lg-3 mtb">
+                            <div class="article">
+                                <a href="#">
+                                    <img src="img/carotte.jpg"></img>
+                                    <h3>Carotte - Variété etc</h3>
+                                    <p>20€/kg</p>
+                                </a>
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">200g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">4.95€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">400g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">9.25€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4  col-sm-4 mt-10">1 Kg</p>
+                                    <p class="col-xs-4  col-sm-4 mt-10">16.5€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <article class="text-center col-xs-6 col-md-4 col-lg-3 mtb">
+                            <div class="article">
+                                <a href="#">
+                                    <img src="img/carotte.jpg"></img>
+                                    <h3>Carotte - Variété etc</h3>
+                                    <p>20€/kg</p>
+                                </a>
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">200g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">4.95€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">400g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">9.25€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4  col-sm-4 mt-10">1 Kg</p>
+                                    <p class="col-xs-4  col-sm-4 mt-10">16.5€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <article class="text-center col-xs-6 col-md-4 col-lg-3 mtb">
+                            <div class="article">
+                                <a href="#">
+                                    <img src="img/carotte.jpg"></img>
+                                    <h3>Carotte - Variété etc</h3>
+                                    <p>20€/kg</p>
+                                </a>
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">200g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">4.95€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">400g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">9.25€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4  col-sm-4 mt-10">1 Kg</p>
+                                    <p class="col-xs-4  col-sm-4 mt-10">16.5€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <hr>
+            </section>
+
+
+            <!-- Partenaire -->
+            <section>
+                <div class="fade in" id="partenaire">
+                    <h2>Nos Partenaires</h2>
+                    <div class="underline"></div>
+                    
+                    <div class="row">
+                        <article class="text-center col-xs-6 col-md-4 col-lg-3 mtb">
+                            <div class="article">
+                                <a href="#">
+                                    <img src="img/carotte.jpg"></img>
+                                    <h3>Carotte - Variété etc</h3>
+                                    <p>20€/kg</p>
+                                </a>
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">200g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">4.95€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">400g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">9.25€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4  col-sm-4 mt-10">1 Kg</p>
+                                    <p class="col-xs-4  col-sm-4 mt-10">16.5€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="text-center col-xs-6 col-md-4 col-lg-3 mtb">
+                            <div class="article">
+                                <a href="#">
+                                    <img src="img/carotte.jpg"></img>
+                                    <h3>Carotte - Variété etc</h3>
+                                    <p>20€/kg</p>
+                                </a>
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">200g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">4.95€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">400g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">9.25€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4  col-sm-4 mt-10">1 Kg</p>
+                                    <p class="col-xs-4  col-sm-4 mt-10">16.5€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="text-center col-xs-6 col-md-4 col-lg-3 mtb">
+                            <div class="article">
+                                <a href="#">
+                                    <img src="img/carotte.jpg"></img>
+                                    <h3>Carotte - Variété etc</h3>
+                                    <p>20€/kg</p>
+                                </a>
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">200g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">4.95€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">400g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">9.25€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4  col-sm-4 mt-10">1 Kg</p>
+                                    <p class="col-xs-4  col-sm-4 mt-10">16.5€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="text-center col-xs-6 col-md-4 col-lg-3 mtb">
+                            <div class="article">
+                                <a href="#">
+                                    <img src="img/carotte.jpg"></img>
+                                    <h3>Carotte - Variété etc</h3>
+                                    <p>20€/kg</p>
+                                </a>
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">200g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">4.95€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4 col-sm-4 mt-10">400g</p>
+                                    <p class="col-xs-4 col-sm-4 mt-10">9.25€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                                <div class="underline-center-article"></div>
+                            
+                                <div class="row">
+                                    <p class="col-xs-4  col-sm-4 mt-10">1 Kg</p>
+                                    <p class="col-xs-4  col-sm-4 mt-10">16.5€</p>
+                                    <div class="col-xs-4 col-sm-4 mt-3">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-shopping-basket"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <hr>
+            </section>
         </main>
 
 
 
-
+        <!--  Footer  -->
         <footer>
             <section>
                 <div class="row">
@@ -287,7 +641,7 @@
                         <h5>NOUS CONTACTER</h5>
                         <ul>
                             <li>Nom et prénom</li>
-                            <li>12 Rue du là bas loin</li>
+                            <li>12 Rue du là-bas loin</li>
                             <li>68600, Par-là-bas</li>
                             <li>06 52 63 85 46</li>
                             <li>adressecontact@hotmail.fr</li>
@@ -311,7 +665,8 @@
                         <p>Une idée? Une suggestion ? Partagez nous là.</p>
                         <form class="form">
                             <div class="form-group">
-                                <textarea type="text" class="form-control" placeholder="Un conseil ?" title="jeaispasencorequoiécririci" rows="5"></textarea>
+                                <textarea type="text" class="form-control" placeholder="Un conseil ?"
+                                    title="jeaispasencorequoiécririci" rows="5"></textarea>
                                 <button id="btnform" type="button" class="btn btn-default">Envoyez</button>
                             </div>
                         </form>
@@ -326,8 +681,5 @@
         </footer>
     </div>
 </body>
-
-
-
 
 </html>
