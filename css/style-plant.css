@@ -9,45 +9,74 @@ font-family: 'Indie Flower', cursive;
 
 
 /*En commun */
+.mt-3{
+    margin-top:3px;
+}
+
+.mt-10{
+    margin-top:10px;
+}
+
+
+
+
+
+
+section{
+    margin-bottom:50px;
+}
+section img{
+
+}
+
+.mt-nav{
+    margin-top:50px;
+}
+.mtb{
+    padding:15px 15px 15px 15px;
+}
+
+
+
+
+
+
+
+
 body {
   margin-top: 50px;
   background-color: #fcf9f4;
   font-size: 1.6rem;
-}
 
-.center {
-  display: flex;
-  justify-content: center;
-}
-
-.fa-pagelines {
-  color: #475a51;
 }
 
 h1 {
   font-size: 4rem;
   font-weight: bold;
   font-family: "Lobster", cursive;
-  color: #475a51;
+  color: #afbb94;
 }
 
 h2 {
-  padding-top: 20px;
-  color: #475a51;
+  padding-left:40px;
+  color: #ffffff;
   font-weight: bold;
   font-family: "Lobster", cursive;
+  font-size:4rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Indie Flower", cursive;
+  font-weight: bold;
+
+  color:#ffffff;
 }
 
 h4 {
   text-align: center;
-  margin-left: 40px;
   font-size: 2.3rem;
-  color: #656e68;
+  color: #ffffff;
   font-family: "Lobster", cursive;
 }
 
@@ -63,7 +92,7 @@ h5 {
   width: 10vw;
   border-radius: 2px;
   margin-top: 20px;
-  background-color: #859189;
+  background-color: #ffffff;
   margin-bottom: 30px;
 }
 
@@ -72,7 +101,7 @@ h5 {
   width: 10vw;
   border-radius: 2px;
   margin-top: 20px;
-  background-color: #859189;
+  background-color: #ffffff;
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
@@ -82,33 +111,29 @@ a {
   color: black;
 }
 
-.inline {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 2vw;
-  margin-right: 2vw;
-  font-family: "Indie Flower", cursive;
-  font-weight: bold;
-  font-size: 2rem;
-}
 
-article {
-  padding: 0 0;
-}
+
+
 
 .article {
-  min-width: 200px;
   border: #796742 solid 1px;
   border-radius: 10px;
-  background-color: #ccbdaa;
-  margin: 0px 20px 40px 20px;
-  padding: 0 10px 10px 10px;
+  background-color: #c5ae8f;
+
+  padding-bottom:0px;
 }
+
 .article img {
-  margin-top: 20px;
-  border-radius: 10px;
-  border: #806739 solid 1px;
+    width:80%;
+    margin-top:25px;
+
+    border-radius: 10px;
+    border: #803962 solid 1px;
 }
+
+
+
+
 
 /* Navigation */
 .navbar-brand {
@@ -127,23 +152,23 @@ article {
 }
 
 /* Présentation */
-main {
-  /* Présentation */
-}
+
 main .img-banniere {
-  background-image: url(../img/fonds2.jpg);
+  background-color:#775929;
   width: 100%;
 }
 main #presentation {
-  padding-top: 80px;
-  margin: 0px 0 0px 0;
+  padding-top: 50px;
   padding-bottom: 20px;
+  
+  margin:0;
 }
 main #presentation p {
   color: white;
-  font-size: 1.7rem;
+  font-size: 2rem;
   margin-left: 5vw;
   margin-right: 5vw;
+  margin-bottom:50px;
 }
 main .parallax {
   background-attachment: fixed;
@@ -158,6 +183,22 @@ main .presentation-image .small {
   height: 40px;
   margin-top: 40px;
 }
+main .underline-center-article {
+    height: 1px;
+    width: 100%;
+    background-color: #947022;
+
+    margin-left:auto;
+    margin-right:auto;
+}
+main .underline {
+    height: 2px;
+    width: 50px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    background-color: #918e85;
+    margin-left: 60px;
+}
 main .underline-center {
   height: 2px;
   width: 50px;
@@ -167,18 +208,25 @@ main .underline-center {
   margin-left: auto;
   margin-right: auto;
 }
-main .underline {
-  height: 2px;
-  width: 50px;
-  margin-bottom: 30px;
-  border-radius: 2px;
-  background-color: #859189;
-  margin-left: 20px;
+main #produit-famille {
+  background-color: #829c7a;
+  padding:30px;
+  padding-right:-15px;
+  padding-left:-15px;
 }
-main #ptsdevente {
-  background-color: #fcf9f4;
-  padding-bottom: 30px;
+main .produit {
+    padding:30px;
+    padding-right:-15px;
+    padding-left:-15px;
 }
+main .bg-fonce{
+    background-color: #6e4b15;
+}
+main .bg-clair{
+    background-color: #8f6931;
+}
+
+
 main #ptsdevente ul {
   list-style: none;
   text-align: center;
@@ -264,11 +312,6 @@ footer a {
 
   article {
     width: 100% !important;
-  }
-
-  section img {
-    height: 150px !important;
-    width: 150px !important;
   }
 
   footer {

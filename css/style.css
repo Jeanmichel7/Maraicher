@@ -1,10 +1,6 @@
 @charset "UTF-8";
-/*
-font-family: 'Pangolin', cursive;
-font-family: 'Yellowtail', cursive;
 
-font-family: 'Lobster', cursive;
-font-family: 'Indie Flower', cursive;
+
 
 
 
@@ -14,35 +10,29 @@ body {
   background-color: #fcf9f4;
   font-size: 1.6rem;
 }
-
 .center {
   display: flex;
   justify-content: center;
 }
-
 .fa-pagelines {
   color: #475a51;
 }
-
 h1 {
   font-size: 4rem;
   font-weight: bold;
   font-family: "Lobster", cursive;
   color: #475a51;
 }
-
 h2 {
   padding-top: 20px;
   color: #475a51;
   font-weight: bold;
   font-family: "Lobster", cursive;
 }
-
 h3 {
   font-size: 2rem;
   font-family: "Indie Flower", cursive;
 }
-
 h4 {
   text-align: center;
   margin-left: 40px;
@@ -50,14 +40,12 @@ h4 {
   color: #656e68;
   font-family: "Lobster", cursive;
 }
-
 h5 {
   font-weight: bold;
   color: #475a51;
   margin-top: 30px;
   margin-left: 10px;
 }
-
 .underline-titre {
   height: 2px;
   width: 10vw;
@@ -66,7 +54,6 @@ h5 {
   background-color: #859189;
   margin-bottom: 30px;
 }
-
 .underline-titre-center {
   height: 2px;
   width: 10vw;
@@ -77,11 +64,9 @@ h5 {
   margin-right: auto;
   margin-left: auto;
 }
-
 a {
   color: black;
 }
-
 .inline {
   display: flex;
   justify-content: space-around;
@@ -91,11 +76,9 @@ a {
   font-weight: bold;
   font-size: 2rem;
 }
-
 article {
   padding: 0 0;
 }
-
 .article {
   min-width: 200px;
   border: #796742 solid 1px;
@@ -110,6 +93,18 @@ article {
   border: #806739 solid 1px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Navigation */
 .navbar-brand {
   font-family: "Yellowtail", cursive;
@@ -117,14 +112,18 @@ article {
   margin-left: 10px;
   color: #332206;
 }
-
 .navbar .icon-bar {
   background-color: white;
 }
-
 .navbar-color {
   background-color: rgba(117, 155, 68, 0.945);
 }
+
+
+
+
+
+
 
 /* Présentation */
 main {
@@ -158,6 +157,13 @@ main .presentation-image .small {
   height: 40px;
   margin-top: 40px;
 }
+
+
+
+
+
+
+
 main .underline-center {
   height: 2px;
   width: 50px;
@@ -175,6 +181,26 @@ main .underline {
   background-color: #859189;
   margin-left: 20px;
 }
+
+.container{
+  width:100%;
+}
+
+
+
+
+#actulalite{
+  background-color: rgba(187, 141, 80, 0.329);
+
+  padding: 20px 20px;
+  border-radius: 20px;
+}
+
+
+
+
+
+
 main #ptsdevente {
   background-color: #fcf9f4;
   padding-bottom: 30px;
@@ -195,6 +221,11 @@ main #ptsdevente .contact1 {
   padding-right: auto;
   padding-left: auto;
 }
+
+
+
+
+
 main #ptsderetrait {
   background-color: #fcf9f4;
   padding-bottom: 30px;
@@ -215,11 +246,21 @@ main #ptsderetrait .contact1 {
   padding-right: auto;
   padding-left: auto;
 }
+
+
+
+
+
 main .contact {
   margin-bottom: 50px;
   padding-right: 40px;
 }
 
+
+
+
+
+/* Footer */
 footer {
   background-color: #dacec2;
   padding: 20px;
@@ -243,6 +284,11 @@ footer form {
 footer a {
   color: #656e68;
 }
+
+
+
+
+
 
 @media screen and (max-width: 767px) {
   .navbar {
