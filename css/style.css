@@ -46,6 +46,11 @@ h5 {
   margin-top: 30px;
   margin-left: 10px;
 }
+
+
+
+
+
 .underline-titre {
   height: 2px;
   width: 10vw;
@@ -67,30 +72,30 @@ h5 {
 a {
   color: black;
 }
-.inline {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 2vw;
-  margin-right: 2vw;
-  font-family: "Indie Flower", cursive;
-  font-weight: bold;
-  font-size: 2rem;
-}
+
+
+
+
+
 article {
   padding: 0 0;
 }
+
 .article {
-  min-width: 200px;
   border: #796742 solid 1px;
   border-radius: 10px;
   background-color: #ccbdaa;
-  margin: 0px 20px 40px 20px;
-  padding: 0 10px 10px 10px;
+
+  padding-bottom:0px;
+  margin-bottom:30px;
 }
+
 .article img {
-  margin-top: 20px;
-  border-radius: 10px;
-  border: #806739 solid 1px;
+    width:80%;
+    margin-top:25px;
+
+    border-radius: 10px;
+    border: #803962 solid 1px;
 }
 
 
@@ -125,10 +130,8 @@ article {
 
 
 
-/* Présentation */
-main {
+
   /* Présentation */
-}
 main .img-banniere {
   background-image: url(../img/fonds2.jpg);
   width: 100%;
@@ -189,10 +192,10 @@ main .underline {
 
 
 
-#actulalite{
+#actualite{
   background-color: rgba(187, 141, 80, 0.329);
 
-  padding: 20px 20px;
+  padding: 10px 20px;
   border-radius: 20px;
 }
 
