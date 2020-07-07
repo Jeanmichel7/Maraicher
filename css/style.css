@@ -10,6 +10,7 @@ font-family: 'Indie Flower', cursive;
 
 /*En commun */
 body {
+  margin-top: 50px;
   background-color: #fcf9f4;
   font-size: 1.6rem;
 }
@@ -34,7 +35,6 @@ h2 {
   padding-top: 20px;
   color: #475a51;
   font-weight: bold;
-  text-align: center;
   font-family: "Lobster", cursive;
 }
 
@@ -59,6 +59,15 @@ h5 {
 }
 
 .underline-titre {
+  height: 2px;
+  width: 10vw;
+  border-radius: 2px;
+  margin-top: 20px;
+  background-color: #859189;
+  margin-bottom: 30px;
+}
+
+.underline-titre-center {
   height: 2px;
   width: 10vw;
   border-radius: 2px;
@@ -118,13 +127,12 @@ article {
 }
 
 /* Présentation */
-.img-banniere {
-  background-image: url(../img/fonds2.jpg);
+main {
+  /* Présentation */
 }
-
-main section img {
-  height: 180px;
-  width: 180px;
+main .img-banniere {
+  background-image: url(../img/fonds2.jpg);
+  width: 100%;
 }
 main #presentation {
   padding-top: 80px;
@@ -137,6 +145,9 @@ main #presentation p {
   margin-left: 5vw;
   margin-right: 5vw;
 }
+main .parallax {
+  background-attachment: fixed;
+}
 main .presentation-image {
   margin-top: 3vh;
 }
@@ -147,7 +158,7 @@ main .presentation-image .small {
   height: 40px;
   margin-top: 40px;
 }
-main .underline {
+main .underline-center {
   height: 2px;
   width: 50px;
   margin-bottom: 30px;
@@ -156,13 +167,13 @@ main .underline {
   margin-left: auto;
   margin-right: auto;
 }
-main .parallax {
-  background-attachment: fixed;
-}
-main #laselection {
-  background-color: #dacec2;
-  margin: 0 0 20px 0;
-  padding-bottom: 10px;
+main .underline {
+  height: 2px;
+  width: 50px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+  background-color: #859189;
+  margin-left: 20px;
 }
 main #ptsdevente {
   background-color: #fcf9f4;
@@ -174,43 +185,53 @@ main #ptsdevente ul {
 }
 main #ptsdevente li {
   color: #859189;
+  font-family: "Indie Flower", cursive;
+  font-size: 2rem;
 }
 main #ptsdevente .bold {
   font-weight: bold;
 }
-main #ptsdevente li {
+main #ptsdevente .contact1 {
+  padding-right: auto;
+  padding-left: auto;
+}
+main #ptsderetrait {
+  background-color: #fcf9f4;
+  padding-bottom: 30px;
+}
+main #ptsderetrait ul {
+  list-style: none;
+  text-align: center;
+}
+main #ptsderetrait li {
+  color: #859189;
   font-family: "Indie Flower", cursive;
   font-size: 2rem;
 }
-main #ptsdevente .contact1 {
-  padding-bottom: 50px;
+main #ptsderetrait .bold {
+  font-weight: bold;
 }
-main #populaire {
-  background-color: #dacec2;
-  margin: 0 0 20px 0;
-  padding-bottom: 10px;
+main #ptsderetrait .contact1 {
+  padding-right: auto;
+  padding-left: auto;
 }
-main #prochainement {
-  background-color: #fcf9f4;
+main .contact {
+  margin-bottom: 50px;
+  padding-right: 40px;
 }
 
 footer {
   background-color: #dacec2;
-  margin: 20px 0 0 0;
+  padding: 20px;
 }
 footer ul, footer p {
   list-style: none;
   padding-left: 10px;
   color: #656e68;
 }
-footer a {
-  color: #656e68;
-}
 footer .mention {
   text-align: center;
   font-size: 1.2rem;
-  padding: 0;
-  margin: 20px 0 0 0;
 }
 footer .social {
   padding-left: 10px;
@@ -218,6 +239,9 @@ footer .social {
 }
 footer form {
   margin-left: 5px;
+}
+footer a {
+  color: #656e68;
 }
 
 @media screen and (max-width: 767px) {
@@ -245,6 +269,10 @@ footer form {
   section img {
     height: 150px !important;
     width: 150px !important;
+  }
+
+  footer {
+    text-align: center;
   }
 }
 
