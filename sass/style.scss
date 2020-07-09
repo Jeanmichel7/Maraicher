@@ -9,6 +9,13 @@ font-family: 'Indie Flower', cursive;
 
 /*En commun */
 
+.mt-3{
+    margin-top:3px;
+}
+.mt-10{
+    margin-top:10px;
+}
+
 
 
 body{
@@ -95,22 +102,24 @@ a{
 article{
     padding:0 0;
 }
-.article{
-    min-width:200px;
-    border:rgb(121, 103, 66) solid 1px;
-    border-radius: 10px;
-    background-color: rgb(204, 189, 170);
 
-    margin:0px 20px 40px 20px;
-    padding:0 10px 10px 10px;
-    img{
-        margin-top:20px;
-        border-radius: 10px;
-        border:rgb(128, 103, 57) solid 1px;
-    }
+
+.article {
+  border: #796742 solid 1px;
+  border-radius: 10px;
+  background-color: #ccbdaa;
+
+  padding-bottom:0px;
+  margin-bottom:30px;
 }
 
+.article img {
+    width:80%;
+    margin-top:25px;
 
+    border-radius: 10px;
+    border: #803962 solid 1px;
+}
 
 
 
@@ -186,6 +195,14 @@ main{
         border-radius: 2px;
         background-color: #859189;
         margin-left:20px;
+    }
+    #actualite{
+        padding:20px;
+
+        
+        border:solid black 1px;
+        border-radius: 15px;
+        background-color: #ccba91;
     }
     #ptsdevente{
         background-color:#fcf9f4;
@@ -284,8 +301,7 @@ footer{
     }
 
     section img{
-        height:150px!important;
-        width: 150px!important;
+        min-height:150px!important;
     }
     footer{
         text-align:center;

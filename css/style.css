@@ -9,6 +9,14 @@ font-family: 'Indie Flower', cursive;
 
 
 /*En commun */
+.mt-3 {
+  margin-top: 3px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
 body {
   margin-top: 50px;
   background-color: #fcf9f4;
@@ -97,17 +105,18 @@ article {
 }
 
 .article {
-  min-width: 200px;
   border: #796742 solid 1px;
   border-radius: 10px;
   background-color: #ccbdaa;
-  margin: 0px 20px 40px 20px;
-  padding: 0 10px 10px 10px;
+  padding-bottom: 0px;
+  margin-bottom: 30px;
 }
+
 .article img {
-  margin-top: 20px;
+  width: 80%;
+  margin-top: 25px;
   border-radius: 10px;
-  border: #806739 solid 1px;
+  border: #803962 solid 1px;
 }
 
 /* Navigation */
@@ -174,6 +183,12 @@ main .underline {
   border-radius: 2px;
   background-color: #859189;
   margin-left: 20px;
+}
+main #actualite {
+  padding: 20px;
+  border: solid black 1px;
+  border-radius: 15px;
+  background-color: #ccba91;
 }
 main #ptsdevente {
   background-color: #fcf9f4;
@@ -267,8 +282,7 @@ footer a {
   }
 
   section img {
-    height: 150px !important;
-    width: 150px !important;
+    min-height: 150px !important;
   }
 
   footer {
