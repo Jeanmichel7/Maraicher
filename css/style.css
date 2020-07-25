@@ -33,10 +33,11 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
   font-family: "Lobster", cursive;
-  color: #475a51;
+  color: #fafafa;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -126,6 +127,9 @@ article {
   margin-left: 10px;
   color: #332206;
 }
+.navbar-brand img {
+  height: 30px;
+}
 
 .navbar .icon-bar {
   background-color: white;
@@ -169,7 +173,7 @@ main {
   /* Présentation */
 }
 main .img-banniere {
-  background-image: url(../img/fonds2.jpg);
+  background-image: url(../img/serre-maraiger.jpg);
   width: 100%;
 }
 main #presentation {
@@ -180,8 +184,12 @@ main #presentation {
 main #presentation p {
   color: white;
   font-size: 1.7rem;
+  font-weight: bold;
   margin-left: 5vw;
   margin-right: 5vw;
+}
+main #presentation p:last-child {
+  margin-bottom: 50px;
 }
 main .parallax {
   background-attachment: fixed;
@@ -218,13 +226,14 @@ main #actualite {
   padding-right: 5vw;
   padding-bottom: 2vh;
   margin-top: 30px;
-  border: solid black 1px;
+  box-shadow: 3px 3px 3px #1e3d0062;
+  border: solid #143b1d 1px;
   border-radius: 15px;
   background-color: #15550218;
 }
 main #actualite .thumbnail {
   margin-top: 2vh;
-  background-color: #fdde99;
+  background-color: white;
   box-shadow: 5px 5px 5px #553a00;
 }
 main #actualite h3 + p {
@@ -327,6 +336,22 @@ footer a {
 
   footer {
     text-align: center;
+  }
+}
+@media screen and (max-width: 405px) {
+  .navbar-brand p {
+    font-size: 2.5rem;
+    margin-left: 5px !important;
+  }
+
+  .navbar-brand {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 340px) {
+  .navbar-brand p {
+    font-size: 2rem;
   }
 }
 
