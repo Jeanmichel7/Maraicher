@@ -133,6 +133,9 @@ article{
     margin-left:10px;
     color:rgb(51, 34, 6);
 
+    &:hover{
+        color:#58441b;
+    }
     img{
         height:30px;
     }
@@ -143,10 +146,33 @@ article{
 .navbar-color{
     background-color: rgba(117, 155, 68, 0.945);
 }
+.btn-nav-bg{
+    background-color: rgba(117, 155, 68, 0.945);
+    margin-top:0;
+    margin-bottom:0;
+    
+    padding-top:12px;
+    padding-bottom:12px;
+
+    &:hover{
+        background: #eeeeee;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+
+.collapse ul{
+    margin-right:0px;
+
+    a{
+        font-size:1.6rem;
+    }
+}
 
 
-
-
+/*        classe pour btn avec caret
 .menu-deroulant{
     background-color:rgba(117, 155, 68, 0.945);
     padding:0;
@@ -180,7 +206,7 @@ article{
         margin-left:30px;
     }
 }
-
+*/
 
 
 /* Présentation */
